@@ -1,0 +1,603 @@
+/* ======== Default Style SCC ======== */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Work Sans', sans-serif;
+}
+.bg-1{
+    background-color: #f7f9ff;
+}
+.bg-2{
+    background-color: #fff;
+}
+
+/* ======== Header Section CSS ======== */
+
+.header{
+    background-color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+.header-logo{
+    float: left;
+    width: 30%;
+}
+.logo-image{
+    width: 60px;
+}
+
+/* ======== Header Menu Section CSS  ======== */
+
+.header-menu{
+    float: left;
+    width: 60%;
+}
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.header-menu ul li a {
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 0 25px;
+}
+.header-menu ul li:hover > a{
+    color: rgb(67, 67, 199);
+}
+
+/* ========= DropDown Menu Section CSS ========= */
+
+.header-menu ul li ul{
+    position: absolute;
+    width: 175px;
+    top: 0%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: .5s;
+}
+.header-menu ul li:hover ul{
+    top: 100%;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li{
+    display: block;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.header-menu ul li ul li a{
+    display: block;
+    line-height: 0;
+    padding: 0 5px;
+    font-size: 13px;
+}
+
+/* ======== Header Button Section CSS ======== */
+
+.header-button{
+    float: left;
+    width: 10%;
+}
+.header-button a {
+    color: #6278df;
+    display: inline-block;
+    border: 2px solid #6278df;
+    padding: 10px 19px;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: .5s;
+    margin-top: 10px;
+}
+.header-button a:hover{
+    color: white;
+    background-color: #6278df;
+}
+
+/* ======== Banner Section CSS ======== */
+
+.banner{
+    background-image: url(./Image/1605012323-image4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+    position: relative;
+    z-index: 9;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .45);
+    z-index: -1;
+}
+.banner-text h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.banner-text h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.banner-text a{
+    display: inline-block;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .4s;
+}
+.banner a:hover{
+    color: white;
+    background-color: #6278df;
+}
+
+/* ======== ontant Section CSS ======== */
+
+.contant{
+    background-color: #f7f9ff;
+    padding: 100px 0;
+}
+.contant-left{
+    float: left;
+    width: 48%;
+}
+.contant-right{
+    float: right;
+    width: 48%;
+}
+.contant-right h3{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.contant-right p{
+    color: #767676;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/* ======== Service Section CSS ======== */
+
+.service{
+    background-color: #fff;
+    padding: 50px 0;
+}
+.service-text h1{
+    font-size: 55px;
+    font-weight: 800;
+    margin: 30px 0;
+}
+.service-text p{
+    color: #767676;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.service-item{
+    float: left;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.109);
+    margin: 15px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.icon{
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+}
+.icon i{
+    color: #6278df;
+    font-size: 40px;
+}
+.item-text h3{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.item-text p{
+    color: #767676;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* ======== Plan Section CSS ======== */
+
+.plan{
+    padding: 30px 0;
+}
+.plan-contant h1 {
+    font-size: 55px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.plan-contant p {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #7d7d7d;
+}
+.plan-item{
+    float: left;
+    width: 31%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 30px rgba(0, 0, 255, .25);
+}
+.plan-heading{
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    transition: .4s;
+}
+.plan-heading h4 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.plan-heading h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.plan-heading h1 span{
+    font-size: 20px;
+}
+.plan-heading h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.plan-heading p{
+    font-size: 18px;
+}
+.plan-contant{
+    padding: 20px;
+}
+.plan-contant ul li {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.plan-contant ul li span{
+    color: #6278df;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.plan-btn{
+    margin: 40px 0;
+}
+.plan-btn span a{
+    display: inline-block;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .4s;
+    box-shadow: 4px 4px 30px rgba(0, 0, 255, .3);
+}
+
+.plan-item:hover .plan-heading{
+    color: white;
+    background-color: #6278df; 
+}
+.plan-item:hover .plan-btn span a{
+    color: white;
+    background-color: #6278df; 
+}
+.plan-btn span a:hover{
+    color: white !important;
+    background-color: #000 !important;
+}
+
+/* ======== Team Section CSS ======== */
+
+.team{
+    padding: 50px 0;
+}
+.team-content h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+.team-member{
+    width: 23%;
+    margin-right: 2%;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 255, .15);
+}
+.tm-image img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.tm-bio{
+    margin: 30px 20px;
+}
+.tm-bio h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.tm-bio p {
+    color: #7d7d7d;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* ======== Subscribe Section CSS ======== */
+
+.subscribe{
+    padding: 50px 0;
+}
+.sub-title p{
+    color: #7d7d7d;
+    font-size: 27px;
+    font-weight: 500;
+    margin: 30px;
+}
+.sub-title h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin: 30px;
+}
+.sub-form{
+    margin: 40px 0;
+}
+.default-input{
+    width: 300px;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+    margin-right: 10px;
+}
+.default-input:focus{
+    border: 1px solid #6278df;
+    box-shadow: 4px 4px 20px rgba(0, 0, 255, .25);
+}
+.sub-form span a{
+    color: #fff;
+    background-color: #6278df;
+    padding: 15px 70px;
+    border-radius: 10px;
+    transition: .5s;
+    border: 2px transparent;
+}
+.sub-form span a:hover{
+    color: #6278df;
+    background-color: #fff;
+    border: 2px solid #6278df;
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 255, .25);
+}
+
+/* ======== About Section CSS ======== */
+
+.about-heading{
+    padding: 100px 0;
+}
+.about-left{
+    width: 50%;
+}
+.about-left h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.about-right{
+    width: 50%;
+}
+.about-right p{
+    color: #7d7d7d;
+    font-size: 22px;
+}
+.about-contant{
+    margin-top: 40px;
+}
+.ac-left{
+    width: 48%;
+    box-shadow: 4px 4px 20px rgba(0, 0, 255, .15);
+    margin-bottom: 60px;
+}
+.ac-img{
+    width: 48%;
+}
+.ac-img-bio{
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.ac-img-bio h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.ac-img-bio p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.ac-right{
+    width: 48%;
+    box-shadow: 4px 4px 20px rgba(0, 0, 255, .15);
+}
+
+/* ======== Testimonial Section CSS ======== */
+
+.testimonial{
+    padding: 50px 0;
+}
+.test-heading p{
+    color: #7d7d7d;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.test-heading h1{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+.test-items{
+    width: 31%;
+    margin-left: 2%;
+    box-sizing: border-box;
+}
+.test-item{
+    position: relative;
+}
+.test-item::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -7%;
+    left: 45%;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.test-item p{
+    color: #7d7d7d;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    position: relative;
+}
+.test-item p::before {
+    content: "\f10d";
+    position: absolute;
+    font-family: "FontAwesome";
+    top: 17px;
+    left: 10px;
+    font-size: 60px;
+    opacity: .15;
+}
+.test-bio-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.test-bio{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+/* ======== Contact Section CSS ======== */
+
+.contact{
+    padding: 40px 0;
+}
+.contact-map{
+    width: 48%;
+}
+.contact-form{
+    width: 48%;
+}
+.form-heading h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.form-heading p{
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.w-100{
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+.w-50{
+    width: 48%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+.form span a{
+    color: #fff;
+    background-color: #6278df;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: .5s;
+    border: 2px transparent;
+}
+.form span a:hover{
+    color: #6278df;
+    background-color: #fff;
+    border: 2px solid #6278df;
+    box-shadow: 4px 4px 20px rgba(0, 0, 255, .25);
+}
+.footer h4{
+    color: burlywood;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.footer h5{
+    color: darkblue;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
